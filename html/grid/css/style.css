@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header
+*
+*
+*/
+header {
+    background-color: rgb(156, 255, 131);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 'img menu';
+}
+
+#imgLogo {
+    margin-left: 80px;
+    width: 200px;
+    height: 120px;
+    Background-image: url("../img/marca.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-area: img;
+}
+.menu {
+    list-style: none;    
+    margin-left: 100px;
+
+    grid-area: menu;
+}
+.menu > li {
+    float: left;
+}
+.menu li a {
+    background-color:rgb(156, 255, 131);
+				color:rgb(182, 53, 53);
+				text-decoration:none;
+				padding:50px 12px;
+				display:block;
+    
+}
+.menu li a:hover {
+    background-color:rgb(255, 255, 255);
+    border: 0px;
+    border-top: 5px;
+
+    transition: 0.2s;
+
+    border-color: rgb(197, 36, 36);
+    border-style: solid;
+}
+#foto {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(156, 255, 131);
+
+    grid-template-areas: 
+    'tituloF fotoF '
+    'textF fotoF'
+    'textF fotoF';
+
+    display: grid;
+}
+#foto h1 {
+    font-size: 40px;
+    grid-area: tituloF;
+    margin-left: 100px;
+    font-weight: bold;
+    color: rgb(182, 53, 53);
+    
+}
+.textico {
+    grid-area: textF;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.fotoMostrar {
+    width: 500px;
+    height: 600px;
+    margin-left: 50px;
+    background-image: url("../img/aceitunas.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    margin-right: 100px;
+
+    grid-area: fotoF;
+}
+#numerito {
+    display: grid;  
+    background-color: white;  
+    grid-template-columns: auto auto auto;  
+    
+}
+#numerito div {
+    padding: 20px ;
+    text-align: left;
+    
+}
+#numerito div p {
+    color: gray;
+}
+
+#galeria {
+   display: grid;
+   background-color: #F7F7F7;  
+   grid-template-areas: 
+   'imgGrande textoG ';
+
+   width: 100%;
+
+}
+.imgGrande{
+    width: 700px;
+    height: 600px;
+    background-image: url("../img/fotoEpica.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    grid-area: imgGrande;
+}
+.textoG {
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-area: textoG;
+
+}
+.tabla4 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    
+}
+.tabla4 div {
+    padding: 100px 160px;
+    background-color: aqua;
+    border: white solid;
+}
+#opciones {
+
+    justify-items: center;
+    display: grid;
+
+    grid-template-columns: repeat(4, 50vh);
+    grid-template-rows: 100%;
+    
+}
+
+.olivi {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/una\ oliva.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+footer {
+    margin-top: 180px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+
+    grid-template-columns:repeat(3, 50vh) ;
+    grid-template-rows: 20vh 50vh;
+
+}
+footer>:first-child{
+    grid-column: 1 / 4;
+}
+.imagenFotoFooter div {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/una\ oliva.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

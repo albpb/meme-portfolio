@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMINO TO GUAPO GUAPISIMO</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark justify-content-center nav-fill mb-md-5">
+
+        <!-- Links -->
+        <ul class="navbar-nav menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fichas con blanco arriba</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fichas con un 1 arriba </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fichas con un 2 arriba </a>
+          </li>
+        </ul>
+      
+        <button type="button" class="btn btn-secondary fixed-right" data-toggle="modal" data-target="#staticBackdrop">Login</button>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Logueame esta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="userName" class="col-form-label">Username</label>
+                    <input type="text" class="form-control" id="userName">  
+                  </div>
+                  <div class="form-group">
+                    <label for="passwd" class="col-form-label">Pasaporte (nunca supe como se escribe)</label>
+                    <input type="password" class="form-control" id="passwd">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </nav>
+    </header>
+    <div class="container">
+        <h1>Club de Fans de fichas de Dominó</h1>
+        <div class="domino">
+          <div class="left-half">
+              <div class="dot-container dot-container-6">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+              </div>
+          </div>
+          <div class="right-half">
+              <div class="dot-container dot-container-3">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+              </div>
+          </div>
+      </div>
+      
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne" aria-controls="#collapseOne">
+              Fichas con blanco arriba
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body d-flex">
+              <div class="foto">
+                <img src="img/01.png">
+                <div class="mask">
+                  <h2> _ / 1</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/02.png">
+                <div class="mask">
+                  <h2>_ / 2</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/03.png">
+                <div class="mask">
+                  <h2>_ / 3</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/04.png">
+                <div class="mask">
+                  <h2>_ / 4</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/05.png">
+                <div class="mask">
+                  <h2>_ / 5</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/06.png">
+                <div class="mask">
+                  <h2>_ / 6</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              Fichas con un 1 arriba
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body d-flex">
+              <div class="foto">
+                <img src="img/11.png">
+                <div class="mask">
+                  <h2>1 / 1</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/12.png">
+                <div class="mask">
+                  <h2>1 / 2</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/13.png">
+                <div class="mask">
+                  <h2>1 / 3</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/14.png">
+                <div class="mask">
+                  <h2>1 / 4</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/15.png">
+                <div class="mask">
+                  <h2>1 / 5</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/16.png">
+                <div class="mask">
+                  <h2>1 / 6</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+              Fichas con un 2 arriba
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body d-flex">
+              <div class="foto">
+                <img src="img/21.png">
+                <div class="mask">
+                  <h2>2 / 1</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/22.png">
+                <div class="mask">
+                  <h2>2 / 2</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/23.png">
+                <div class="mask">
+                  <h2>2 / 3</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/24.png">
+                <div class="mask">
+                  <h2>2 / 4</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/25.png">
+                <div class="mask">
+                  <h2>2 / 5</h2>
+                </div>
+              </div>
+              <div class="foto">
+                <img src="img/26.png">
+                <div class="mask">
+                  <h2>2 / 6</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div> 
+      
+
+        <h2>....</h2>
+
+          <div class="testimonios">
+            <h1>TESTIMONIOS (PARA PENSAR):</h1>
+            
+            <div class="testimonio">
+              <div class="borja"  >
+              </div>
+
+              <div>
+                <p nombre="Borja Escalona">
+                  Desde que conocí esta maravillosa pagina web, puedo dormir todas las noches. Mi existencia por fin tiene un fin, vivir en una realidad que contiene una pagina web como esta. Es que la vida es maravillosa joder. Muchas gracias Albert Pineda, por haber creado esta página web, se nota tu esfuerzo e interés por estar en esta compañía. De verdad espero que te vaya increíble y que (por qué no) te contraten.
+                </p>
+              </div>
+
+            </div>
+            <div class="testimonio">
+              <div class="epstein">
+              </div>
+              <div>
+                <p nombre="Jeffrey Epstein">
+                  Nada. (está muerto)
+                </p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+</html>

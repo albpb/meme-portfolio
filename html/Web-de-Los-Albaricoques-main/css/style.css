@@ -1,0 +1,184 @@
+body {
+    background-color: #E9F7CA;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0px 140px 0px 140px;
+}
+
+h1 {
+    color: #F9A03F;
+    font-weight: 800;
+    display: inline-block;
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    padding: 4vh;
+}
+h2 {
+    color: #F9A03F;
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    padding: 1vh;
+}
+h3 {
+    color: #F7D488;
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    padding-bottom: 1vh;
+}
+ol {
+    background:
+    url(../img/hdCoque.jpg)    /* image */
+    top center  /* position / size */
+    no-repeat                /* repeat */
+    fixed                    /* attachment */
+    padding-box              /* origin */
+    content-box   ;           /* clip */
+    background-size: contain;
+    opacity: 0.65;
+}
+
+ol li {    
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 3.5vh;
+}
+
+div.lorem {
+    border-style: solid;  
+    border-radius: 5px;
+    background-color: #e3f3c0;
+    color: #F9A03F;
+    margin: 30px 0px 30px;
+}
+p.lorem {
+    text-indent: 5vh;
+    color: #F9A03F;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: large;
+    letter-spacing: 0.4vh;
+    word-spacing: 0.03vh;
+    line-height: 3vh;
+    text-align: left;
+    padding: 0vh 5vh 0vh 5vh;
+    
+}
+h1.borde {
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+
+}
+div.prueba {
+    background-color: firebrick;
+    position: relative;
+    top: 50px;
+    height: 30vh;
+    width: 30vh;
+}
+div.prueba2 {
+    background-color: rgb(34, 48, 178);
+    position: absolute;
+    top: 60px;
+    height: 10vh;
+    width: 10vh;
+}
+#albaricoque {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/amigo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#albaricoque:hover{
+    background-image: url("../img/abierto.png");
+}
+.container { width: 100%; height: 400px; background-color: #F9A03F; display: flex; margin: 30px 0px 30px 0px} 
+.item-1 { flex-basis: 200px ; flex-grow: 2; background-color: aqua;  }                                 
+ .item-2 { flex-basis: 100px ; flex-grow: 2; background-color:darkgoldenrod }
+  .item-3 { flex-basis: 100px ; flex-grow: 1; background-color: deeppink;}
+   .item-4 { flex-basis: 100px ; flex-grow: 1; background-color: red; }
+
+section {
+    margin: 40px 0px 50px 0px;
+    display: grid;
+
+}
+.section1 {
+    grid-template-columns: [x1] 100px [x2] 200px [x3] 300px [x4] 200px [x5] 100px;
+    grid-template-rows: [y1] 100px [y2] 20px [y3] 30px ;
+}
+/* PRUEBA CON SECTION UTILIZANDO GRID TEMPLATE-ROWS Y GRID-COLUMN END */
+.cab{
+    border:rgb(34, 48, 178) solid;
+    background-color: #F7D488;
+    grid-column-start: x1;
+    grid-column-end: x4;
+}
+.as {
+    border: rgb(34, 48, 178) solid;
+    background-color: crimson;
+    grid-column-start: x1;
+    grid-column-end: x3;
+
+    grid-row-start: y2;
+    grid-row-end: y4 ;
+
+}
+
+.it{
+    border:rgb(34, 48, 178) solid;
+    background-color: #F9A03F;
+    padding: 10px 10px;
+}
+
+/* PRUEBA CON SECTION UTILIZANDO GRID TEMPLATE AREA */
+
+.section2 {
+    grid-template-areas: 
+    'header header header header '
+    'menu  main main right'
+    'menu  footer footer footer'
+    ;
+}
+.section2 div {
+    padding: 30px 30px;
+    border: black;
+}
+.header {
+    background-color: #3ff93f;
+    grid-area: header;
+}
+.menu {
+    background-color: #3f80f9;
+    grid-area: menu;
+}
+.main {
+    background-color: #F9A03F;
+    grid-area: main;
+}
+.right {
+    background-color: #f93fbb;
+    grid-area: right;
+}
+.footer {
+    background-color: #f93f3f;
+    grid-area: footer;
+}
+/* MEDIA QUERIES FOR MOBILE DEVICES (TEST RESPONSIVE WEB) */
+@media only screen and (max-width: 768px) {
+    .section2 {
+        grid-template-areas: 
+        'header header header header'
+        'menu menu menu menu'
+        'main main main right'
+        'footer footer footer footer'
+        ;
+    }
+}
